@@ -38,7 +38,8 @@ public class JacksonParser {
     }
 
     public static void parsJson() throws IOException {
-        showXsdElements();
+        //showXsdElements();
+
         JsonFactory jsonFactory = new JsonFactory();
         JsonParser jsonParser = jsonFactory.createParser(json);
         JsonToken jsonToken = jsonParser.nextToken();
